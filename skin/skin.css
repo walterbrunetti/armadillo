@@ -1,0 +1,24 @@
+/* General */
+.h3_title{
+	font-weight:bold;
+}
+
+/* Tool bar and Menu */
+#armadillo-Toolbar-menu{
+  list-style-image: url("chrome://armadillo/skin/logo.png");
+}
+.menuitem-iconic{
+	list-style-image: url("chrome://armadillo/skin/edit-icon.png");
+}
+
+/* About */
+#aboutArmadillo{
+	height:130px;
+}
+.armadilloTitle{
+	font-size:20px
+}
+.created_by{
+ margin-left:20px;
+}
+ 

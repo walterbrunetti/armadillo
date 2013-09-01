@@ -1,0 +1,1 @@
+pref("extensions.armadillo.autorun", false);

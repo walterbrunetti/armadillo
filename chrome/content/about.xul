@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/"  type="text/css"?>
+<?xml-stylesheet href="chrome://armadillo/skin/skin.css" type="text/css"?> 
+
+<window id="aboutArmadillo" title="About Armadillo Live!" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<hbox>
+		<image src='chrome://armadillo/skin/logo48.png' width='48' height='48'/>
+		<box orient="vertical">  
+		  <label value="Armadillo Live!" class="armadilloTitle"/>
+			<label value="Version 1.0 Beta"/>
+		</box>
+	</hbox>
+	<box orient="vertical">
+	  <label value="Created by " class="h3_title"/>
+	  <label value="Walter Brunetti" class="created_by"/>
+	</box>
+	<hbox>
+		<spacer flex="1"/>
+	</hbox>
+	<hbox>
+		<spacer flex="1"/>
+		<button label="Close" oncommand="close();"/>
+	</hbox>
+</window>

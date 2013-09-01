@@ -1,0 +1,11 @@
+content armadillo chrome/content/
+content armadillo chrome/content/ contentaccessible=yes
+
+overlay chrome://browser/content/browser.xul chrome://armadillo/content/browser.xul
+
+locale	armadillo	en-US	locale/en-US/
+
+skin	armadillo	classic/1.0	skin/
+
+# This need to be checked
+style	chrome://global/content/customizeToolbar.xul	chrome://armadillo/skin/skin.css

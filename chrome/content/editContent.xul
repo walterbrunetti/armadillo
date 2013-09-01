@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/"  type="text/css"?>
+<?xml-stylesheet href="chrome://armadillo/style.css"?>
+
+<window onload="onLoad();" id="rootWnd" title="Edit Content" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script><![CDATA[
+	var target = null;
+	
+  function onLoad() {
+    gStatus = document.getElementById("content-box");
+    gStatus.value = window.arguments[0].target.innerHTML;
+    target = window.arguments[0].target;
+  }
+  function save() {
+   gStatus = document.getElementById("content-box");
+   window.arguments[0].armadillo.updateOutput(target,gStatus.value);
+   close();
+  }
+]]></script>
+
+    <hbox>
+      <textbox id="content-box" value="" multiline="true" rows="30" cols="100"/>
+  	</hbox>
+    <hbox>
+    	<button label="OK" oncommand="save();"/>
+    </hbox>
+</window>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://armadillo/skin/skin.css" type="text/css"?> 
+<!DOCTYPE armadillo SYSTEM "chrome://armadillo/locale/translations.dtd">
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script src="armadillo.js" />
+    <script src="io.js" />
+    <script src="utils.js" />
+    
+    <menupopup id="menu_ToolsPopup">
+	    <menu id="menu_Armadillo" label="&armadillo;" accesskey="armadillo-run-key" insertafter="javascriptConsole">
+		    <menupopup id="menu_ArmadilloPopup">
+			    <menuitem id="armadillo_help" label="Help" onclick="Armadillo.help();"/>
+			    <menuitem id="armadillo_about" label="About...&armadillo; 1.0 Beta" oncommand="Armadillo.openAbout();" />
+		    </menupopup>
+	    </menu>
+    </menupopup>
+
+    <toolbox id="navigator-toolbox">
+	    <toolbar id="armadillo-Toolbar" toolbarname="Armadillo Toolbar" accesskey="A" context="toolbar-context-menu" hidden="false" persist="hidden">
+		    <toolbaritem flex="0">
+			    <toolbarbutton type="menu" id="armadillo-Toolbar-menu" tooltiptext="&armadillo; Tool Bar" label=" &armadillo; ">
+				    <menupopup id="cag-newsmenu">
+				<menuitem label="Select file" id='armadillo-menuitem-select' tooltiptext="Select a file to be updated" oncommand="Armadillo.selectFile();" />
+				<menuitem label="Save changes" id='armadillo-menuitem-save' tooltiptext="Save changes to the selected file" oncommand="Armadillo.saveFile();" />
+				    </menupopup>
+			    </toolbarbutton>
+		    </toolbaritem>
+	    </toolbar>
+    </toolbox>
+    
+    <menupopup id="contentAreaContextMenu">
+      <menuseparator/>
+      <menuitem id="armadillo_start_editing" label="&updatecontent;" class="menuitem-iconic" oncommand="Armadillo.startEditing(document.popupNode)"  />
+    </menupopup>
+</overlay>
