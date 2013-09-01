@@ -7,9 +7,9 @@
 #armadillo-Toolbar-menu{
   list-style-image: url("chrome://armadillo/skin/logo.png");
 }
-.menuitem-iconic{
+/*.menuitem-iconic{
 	list-style-image: url("chrome://armadillo/skin/edit-icon.png");
-}
+}*/
 
 /* About */
 #aboutArmadillo{
